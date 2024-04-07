@@ -1,0 +1,1 @@
+const navIcon = document.querySelector('.nav__icon');
