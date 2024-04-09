@@ -66,6 +66,61 @@ nav {
   padding-bottom: 1rem;
 }
 
+.cta__btn {
+  background-color: var(--Soft-red);
+  outline: none;
+  border: none;
+  padding-inline: 1.7rem;
+  padding-block: 0.7rem;
+  color: var(--Off-white);
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta__btn a {
+  color: var(--Off-white);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.section__2 {
+  background-color: var(--Very-dark-blue);
+  margin-inline: 1rem;
+  padding: 1rem;
+}
+
+.section__2 .section__2-heading {
+  color: var(--Soft-orange);
+  font-size: 1.7rem;
+  padding-bottom: 1.3rem;
+}
+
+.news .news__heading {
+  color: var(--Off-white);
+  font-size: 1.1rem;
+  padding-bottom: 0.7rem;
+}
+
+.news p {
+  color: var(--Off-white);
+  font-weight: lighter;
+  width: 85%;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--Off-white);
+}
+
+.news__2, .news__3 {
+  padding-top: 1.5rem;
+}
+
+.news__3 p{
+  border: none;
+}
+
 .hide {
   display: none;
 }
