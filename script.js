@@ -1,6 +1,8 @@
 const openMenu = document.querySelector(".open__icon");
 const closeMenu = document.querySelector(".close__menu");
+// const links = 
 const navLinks = document.querySelector(".nav__links");
+const navLink = document.querySelectorAll(".nav__link");
 const bodyElement = document.querySelector("body");
 const mainElement = document.querySelector("main");
 
@@ -19,7 +21,8 @@ const closeNav = () => {
   }
 };
 
-openMenu.addEventListener("click", openNav);
 
+
+openMenu.addEventListener("click", openNav);
 closeMenu.addEventListener("click", closeNav);
 mainElement.addEventListener("click", closeNav);
