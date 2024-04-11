@@ -1,8 +1,6 @@
 const openMenu = document.querySelector(".open__icon");
 const closeMenu = document.querySelector(".close__menu");
-// const links = 
 const navLinks = document.querySelector(".nav__links");
-const navLink = document.querySelectorAll(".nav__link");
 const bodyElement = document.querySelector("body");
 const mainElement = document.querySelector("main");
 
@@ -21,7 +19,19 @@ const closeNav = () => {
   }
 };
 
+document.querySelector(".links").addEventListener("click", function (e) {
+  e.preventDefault();
 
+  console.log(e.target);
+  if (e.target.classList.contains("nav__link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+
+  bodyElement.style.overflow = "scroll";
+  navLinks.classList.add("hide");
+  mainElement.style.opacity = "1";
+});
 
 openMenu.addEventListener("click", openNav);
 closeMenu.addEventListener("click", closeNav);
