@@ -288,7 +288,35 @@ nav {
     justify-content: center;
   }
 
+  .section__3 {
+    display: flex;
+  }
+
+  .display__news {
+    width: 33.3%;
+    padding-inline: 1rem;
+  }
+
+  .display__no {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .display__heading {
+    padding-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .display__subtext {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
   .hide__img {
     display: block;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  
 }
