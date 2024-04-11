@@ -25,6 +25,7 @@ nav {
   justify-content: space-between;
   padding-top: 1.3rem;
   padding-inline: 1rem;
+  background-color: var(--Off-white);
 }
 
 .nav__img img {
@@ -42,11 +43,16 @@ nav {
   right: 0;
 }
 
+.open__icon:hover,
+.close__menu:hover {
+  cursor: pointer;
+}
+
 .nav__links {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--Off-white);
   box-shadow: 1rem 2rem 1rem 1rem rgba(0, 0, 0, 0.263);
   height: 100vh;
@@ -54,6 +60,11 @@ nav {
   opacity: 1;
   padding-top: 2rem;
   padding-inline: 1rem;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+  color: var(--Soft-red);
 }
 
 .nav__links li a {
@@ -67,11 +78,6 @@ nav {
   flex-direction: column;
   gap: 2rem;
   margin-top: 5rem;
-}
-
-main {
-  /* filter: ; */
-  /* opacity: 0.5; */
 }
 
 .hero__img {
@@ -150,7 +156,7 @@ main {
 .news p {
   color: var(--Off-white);
   font-weight: lighter;
-  width: 85%;
+  /* width: 85%; */
   font-size: 0.9rem;
   line-height: 1.6rem;
   padding-bottom: 1.5rem;
@@ -212,6 +218,77 @@ main {
   color: var(--Very-dark-blue);
   line-height: 1.4rem;
 }
+
 .hide {
   display: none;
+}
+
+.hide__img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hide__mobile__img {
+    display: none;
+  }
+
+  .intro__text {
+    width: 50%;
+  }
+
+  .hero__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-inline: 2.5rem;
+    width: 100%;
+  }
+
+  .hero__text h1 {
+    font-size: 3rem;
+    line-height: 2.6rem;
+    width: 50%;
+  }
+
+  .display__img2 {
+    width: 200px;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .close__menu,
+  .open__icon {
+    display: none;
+  }
+
+  nav {
+    padding-inline: 2rem;
+    /* border: 1px solid black; */
+    align-items: center;
+  }
+
+  .nav__links {
+    height: auto;
+    align-items: center;
+    background-color: none;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .links {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hide__img {
+    display: block;
+  }
 }
