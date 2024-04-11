@@ -19,6 +19,7 @@ const closeNav = () => {
   }
 };
 
+// Scrolling through the nav links start
 document.querySelector(".links").addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -32,6 +33,7 @@ document.querySelector(".links").addEventListener("click", function (e) {
   navLinks.classList.add("hide");
   mainElement.style.opacity = "1";
 });
+//Scrolling through the nav links end
 
 openMenu.addEventListener("click", openNav);
 closeMenu.addEventListener("click", closeNav);
