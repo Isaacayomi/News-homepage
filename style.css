@@ -154,6 +154,12 @@ nav {
   color: var(--Off-white);
   font-size: 1.1rem;
   padding-bottom: 0.7rem;
+  transition: 0.2s linear;
+}
+
+.news .news__heading:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
 }
 
 .news p {
@@ -214,6 +220,12 @@ nav {
   font-size: 1rem;
   font-weight: 800;
   padding-bottom: 0.7rem;
+  transition: .2s linear;
+}
+
+.display__heading:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
 }
 
 .display__subtext {
